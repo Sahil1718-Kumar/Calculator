@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3b3f48;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+#container{
+    width: 21rem;
+    height: min-content;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: 900;
+    box-shadow: 3px 3px 3px #17181c,
+                -3px -3px 3px #676e7e;
+
+}
+input{
+    font-size: 3.5em;
+    text-align: right;
+    padding: 1.5rem 1rem 1rem 1.5rem;
+    width: 90%;
+    border: none;
+    display: block;
+    outline: none;
+    background: transparent;
+    color: white;
+    box-shadow: inset 3px 3px 3px #17181c,
+                inset -3px -3px 3px #676e7e;
+}
+
+#keys button{
+    background: #3b3f48;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #17181c,
+                -3px -3px 3px #676e7e;
+   
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+}
+#keys .btn:focus{
+        background: #3b3f48;
+        box-shadow: inset 3px 3px 3px #17181c,
+                    inset -3px -3px 3px #676e7e;
+    }
+
+#keys #op1, #keys #op2, #keys #op3, #keys #op4{
+    color: aqua;
+}
+#keys #result{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+    height: auto;
+    border-radius: 30px;
+    color: cyan;
+
+}
